@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="Sală de sport din orașul Ungheni"> 
+    <meta name="keywords" content="sport, gym, professional gym, ungheni, moldova, unghneni sala">
+    <meta name="viewport" content="width=device-width">
+    <title>BeFit</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    </head>
+<body>
+    
+    <header>
+        <div class="container" id="page-header">
+            <nav>
+                <img src="../imagini/logogogo.png" class="logo">
+                <ul>
+                    <li><a href="index.html">iconita </a></li>
+                    <li><a href="DespreNoi.html">Despre noi</a></li>
+                    <li><a href="abonamente.html">Abonamente</a></li>
+                    <li><a href="PentruTine.html">Pentru tine</a></li>
+                </ul>
+                <img src="../imagini/menu-btn.png" alt="" class="menu-btn">
+            </nav>
+        </div>
+        <div class="citat">
+            <h1>Don't wish</h1>
+            <h3>for it</h3>
+            <h1>work</h1>
+            <h3>for it</h3>
+        </div>
+        <!-- <div class="text">
+            <h3>Ești pregatit pentru o</h3>
+            <h1>SCHIMBARE?</h1>
+            <a href=index.htmle class="button">Începe acum!</a>
+        </div> -->
+    </header>
+
+
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navUl = document.querySelector('nav ul')
+        menuBtn.addEventListener('click',()=>{
+            navUl.classList.toggle('mobile-menu')
+        })
+
+        const pageHeader = document.getElementById("page-header")
+        window.onscroll = () => {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                pageHeader.className = "container header-mic";
+            } else {
+                pageHeader.className = "container";
+            }
+        }
+    </script>
+
+    <!-- <section>
+        abracadabra
+    </section> -->
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="rand">
+                <div class="coloana">
+                    <h4>Despre sala...</h4>
+                    <ul>
+                        <li><a href="index.html">iconita</li>
+                        <li><a href="DespreNoi.html">Despre noi</a></li>
+                        <li><a href="abonamente.html">Abonamente</a></li>
+                        <li><a href="PentruTine.html">Pentru tine</a></li>
+                    </ul>
+                </div>
+                <div class="coloana">
+                    <h4>Contactează-ne!</h4>
+                    <ul>
+                        <li><a href="#">Email:info@befit.md</a></li>
+                        <li><a href="#">Telefon:+373 605 83 000</a></li>
+                    </ul>
+                </div>
+                <div class="coloana">
+                    <h4>Urmărește-ne!</h4>
+                    <div class="social">
+                        <a href="https://www.facebook.com/beFITmyfitnessclub" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com/befit_ungheni?igshid=NDk5N2NlZjQ=" target="_blank"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <img src="../imagini/logogogo.png" class="coloana logogo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
